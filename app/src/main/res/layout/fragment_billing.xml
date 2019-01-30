@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gc.materialdesign.views.ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md_black_1000"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation = "vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/first">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/CustomTextView"
+                android:layout_marginTop="40dp"
+                android:text="@string/planName" />
+
+            <TextView
+                android:id="@+id/planName"
+                style="@style/CustomTextView"
+                android:layout_marginTop="40dp"
+                android:text="@string/demoPlan"
+                android:layout_marginStart="42dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/first"
+            android:id="@+id/second"
+            >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/CustomTextView"
+                android:layout_marginTop="40dp"
+                android:text="@string/planDetails" />
+
+            <TextView
+                android:id="@+id/planDetails"
+                style="@style/CustomTextView"
+                android:layout_marginTop="40dp"
+                android:text="@string/demoPlanDetails" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/second"
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/CustomTextView"
+                android:layout_marginTop="40dp"
+                android:text="@string/dueDate" />
+
+            <TextView
+                android:id="@+id/dueDate"
+                android:layout_marginStart="57dp"
+                style="@style/CustomTextView"
+                android:layout_marginTop="40dp"
+                android:text="@string/demoDueDate" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.gc.materialdesign.views.ScrollView >
